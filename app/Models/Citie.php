@@ -25,5 +25,9 @@ class Citie extends Model
         'cod',
         'name',
     ];
+    public function client(){
 
+        return $this->hasMany('App\Client');
+       
+    }
 }

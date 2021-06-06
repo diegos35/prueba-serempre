@@ -17,7 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+Route::resource('citie', 'App\Http\Controllers\CitieController');
+Route::resource('client', 'App\Http\Controllers\ClientController');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

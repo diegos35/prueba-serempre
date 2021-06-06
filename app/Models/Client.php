@@ -25,12 +25,12 @@ class Client extends Model
         'id',
         'cod',
         'name',
-        'cities_id',
+        'citie_id',
     ];
 
     public function citie(){
 
-        return $this->belongsTo(Citie::class, 'cities_id', 'id');
+        return $this->belongsTo(Citie::class);
        
     }
 }

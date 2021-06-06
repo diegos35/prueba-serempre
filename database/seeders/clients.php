@@ -20,7 +20,7 @@ class clients extends Seeder
             'id' => 1,
             'cod' => "10215",
             'name' => "Julian Perdomo",
-            'cities_id' =>7,
+            'citie_id' =>7,
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
@@ -29,7 +29,7 @@ class clients extends Seeder
             'id' => 2,
             'cod' => "10285",
             'name' => "Andres Cortes",
-            'cities_id' =>7,
+            'citie_id' =>7,
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
@@ -38,7 +38,7 @@ class clients extends Seeder
             'id' => 3,
             'cod' => "10295",
             'name' => "Maria Rojas",
-            'cities_id' =>7,
+            'citie_id' =>7,
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
@@ -47,7 +47,7 @@ class clients extends Seeder
             'id' => 4,
             'cod' => "10275",
             'name' => "Juliana Perez",
-            'cities_id' =>2,
+            'citie_id' =>2,
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
@@ -56,7 +56,7 @@ class clients extends Seeder
             'id' => 5,
             'cod' => "10115",
             'name' => "Daniel Esteban",
-            'cities_id' =>9,
+            'citie_id' =>9,
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);

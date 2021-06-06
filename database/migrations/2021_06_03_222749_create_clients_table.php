@@ -17,7 +17,7 @@ class CreateClientsTable extends Migration
             $table->id();
             $table->string("cod");
             $table->string("name");
-            $table->integer('cities_id')->unsigned();
+            $table->integer('citie_id')->unsigned();
             $table->timestamps();
             $table->softDeletes();
         });
