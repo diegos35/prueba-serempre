@@ -41,3 +41,4 @@
 
   </tfoot>
 </table>
+{{ $clients->links('pagination::bootstrap-4') }} 
