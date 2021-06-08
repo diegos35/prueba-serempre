@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Route::resource('citie', 'App\Http\Controllers\CitieController');
 Route::resource('client', 'App\Http\Controllers\ClientController');
+Route::get('/export-clients', 'App\Http\Controllers\ExcelController@exportClients');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
