@@ -10,7 +10,7 @@ class CitieController extends Controller
 {
     public function index()
     {
-        $cities = Citie::get();
+        $cities = Citie::paginate(5);;
         return view('citie.index')->with('cities', $cities);
     }
 

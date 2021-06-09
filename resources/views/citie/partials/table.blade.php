@@ -39,3 +39,4 @@
 
   </tfoot>
 </table>
+{{ $cities->links('pagination::bootstrap-4') }} 

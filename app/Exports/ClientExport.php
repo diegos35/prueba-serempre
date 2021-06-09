@@ -20,21 +20,16 @@ class ClientExport implements FromCollection,WithHeadings
             'Id',
             'Nombre',
             'created_at',
-            'Ciudad',
-            
-            
-            
+            'Ciudad',     
         ];
     }
     public function collection()
     {
         
-
-
-         $users = DB::table('clients')
+         $users = DB::table('clients')->whereNull('clients.deleted_at')
          ->join('cities', 'clients.citie_id', '=', 'cities.id')
          ->select('clients.id as idCliente','clients.name as NomnbreCliente','clients.created_at as creacionCliente', 'cities.name as CiudadCliente')->get();
          return $users;
 
     }
-}
+}   

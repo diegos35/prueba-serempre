@@ -1,6 +1,17 @@
 <h1 class="text-primary">Control de Clientes</h1>
 
 @include('flash::message')
+<a href="/export-clients" class="btn btn-success" role="button" aria-pressed="true">Excel</a>
+
+<div class="links">
+    {!! Form::label('cod', 'Importar Excel', ['for' => 'cod'] ) !!}
+    <form method="post" action="{{url('import-clients')}}" enctype="multipart/form-data">
+        {{csrf_field()}}
+        <input type="file" name="excel">
+        <br><br>
+        <input type="submit" value="Enviar" style="padding: 10px 20px;">
+    </form>
+</div>
 <table class="table table-bordered" id="MyTable">
   <thead>
     <tr>
