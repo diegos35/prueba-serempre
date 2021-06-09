@@ -1,7 +1,7 @@
 <h1 class="text-primary">Control de Clientes</h1>
 
 @include('flash::message')
-<a href="/export-clients" class="btn btn-success" role="button" aria-pressed="true">Excel</a>
+<a href="/export-clients" class="btn btn-success" role="button" aria-pressed="true" style="float: right;" title="importar eXCEL">Excel</a>
 
 <div class="links">
     {!! Form::label('cod', 'Importar Excel', ['for' => 'cod'] ) !!}
