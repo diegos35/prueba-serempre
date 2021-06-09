@@ -11,7 +11,9 @@ class ClientController extends Controller
     public function index()
     {
         $clients = Client::paginate(5);
-        return view('client.index')->with('clients', $clients);
+        $cities = Citie::get()->pluck('name', 'id');
+        return view('client.index')->with('clients', $clients)->with( 'cities', $cities);
+
     }
 
     public function create()
@@ -53,7 +55,6 @@ class ClientController extends Controller
         flash()->message('Cliente Eliminado')->success();
         return redirect()->route('client.index');
     }
-
 
 
 }
